@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 
 import App from "./App";
 
+import "./components/styles/vars.css";
 import "./components/styles/reset.css";
 import "./components/styles/index.css";
 import "./components/styles/fonts.css";

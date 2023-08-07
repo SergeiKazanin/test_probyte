@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 import style from "./index.module.scss";
 
@@ -6,6 +6,7 @@ import Icons from "./sprite.svg";
 
 export const Head = () => {
   const hoverSech = useRef(null);
+  const [searchIcon, setSearchIcon] = useState("#Search");
 
   return (
     <header className={style.header}>
@@ -20,6 +21,12 @@ export const Head = () => {
           <div className={style.header__cityText}>NY, Manhattan</div>
         </div>
         <div
+          onMouseDown={() => {
+            setSearchIcon("#SearchActive");
+          }}
+          onMouseUp={() => {
+            setSearchIcon("#Search");
+          }}
           onMouseOver={() => {
             hoverSech.current.style.backgroundColor = "#f1f5ff";
           }}
@@ -34,8 +41,8 @@ export const Head = () => {
             type="text"
             className={style.header__inputText}
           ></input>
-          <svg className={style.header__citySvg}>
-            <use xlinkHref={Icons + "#Search"}></use>
+          <svg className={style.header__searchSvg}>
+            <use xlinkHref={Icons + searchIcon}></use>
           </svg>
         </div>
         <div className={style.header__text}>

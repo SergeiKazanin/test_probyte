@@ -58,19 +58,26 @@
     }
     &:active {
       border: 1px solid var(--color-blue);
+      background-color: var(--color-white);
     }
+  }
+  &__searchSvg {
+    width: 16px;
+    height: 16px;
   }
   &__inputText {
     width: 106px;
     height: 14px;
     margin: 0;
     border: 0;
+    opacity: 0.56;
     &::placeholder {
       color: var(--color-dark-blue);
       font-family: Intro Book;
       font-size: 14px;
     }
     outline: none;
+    background-color: inherit !important;
   }
   &__text {
     display: flex;

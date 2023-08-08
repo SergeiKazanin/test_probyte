@@ -1,0 +1,82 @@
+.info {
+  width: 100%;
+  height: 648px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  &__heading {
+    margin-top: 98px;
+    color: var(--colour-dark-blue);
+    text-align: center;
+    font-family: Intro Bold;
+    font-size: 40px;
+  }
+  &__text {
+    margin-top: 36px;
+    width: 754px;
+    color: var(--colour-dark-blue);
+    text-align: center;
+    font-family: Intro Book;
+    font-size: 22px;
+    line-height: 32px; /* 145.455% */
+    opacity: 0.48;
+  }
+  &__blokPad {
+    display: flex;
+    gap: 48px;
+    margin-top: 38px;
+  }
+  &__pad {
+    width: 300px;
+    height: 280px;
+    background-color: var(--background-main);
+    border: 2px solid #c2d2f4;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  &__header {
+    color: var(--colour-dark-blue);
+    font-family: Intro Regular;
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: 15px;
+    margin-left: 25px;
+  }
+  &__padSvgBlock {
+    display: flex;
+    gap: 8px;
+    margin-top: 24px;
+    margin-left: 33px;
+  }
+  &__circle {
+    width: 80px;
+    height: 80px;
+    background-color: var(--color-white);
+    border-radius: 50px;
+    filter: drop-shadow(0px 8px 16px rgba(43, 107, 243, 0.16));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__courierSvg {
+    width: 48px;
+    height: 48px;
+  }
+  &__routeSvg {
+    width: 102px;
+    height: 76px;
+  }
+  &__padText {
+    width: 252px;
+    color: var(--text-color);
+    font-family: Intro Book;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    margin-left: 24px;
+    margin-top: 31px;
+  }
+}

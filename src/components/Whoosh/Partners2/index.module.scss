@@ -18,4 +18,20 @@
   &__splide {
     margin-top: 55px;
   }
+  &__arrowPrev {
+    left: -76px;
+    background: #fff;
+    opacity: 1;
+    svg {
+      height: auto;
+    }
+  }
+  &__arrowNext {
+    right: -76px;
+    background: #fff;
+    opacity: 1;
+    svg {
+      height: auto;
+    }
+  }
 }

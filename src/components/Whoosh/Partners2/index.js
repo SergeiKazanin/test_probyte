@@ -1,5 +1,5 @@
 import style from "./index.module.scss";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
+import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 
 import "@splidejs/react-splide/css";
 import cl from "classnames";
@@ -10,6 +10,7 @@ import { ReactComponent as Paywithgoogle } from "./images/pmx-logo-paywithgoogle
 import { ReactComponent as Sofort } from "./images/pmx-logo-sofort.svg";
 import { ReactComponent as Union } from "./images/pmx-logo-union-pay 1.svg";
 import { ReactComponent as Visa } from "./images/pmx-logo-visa.svg";
+import { ReactComponent as Right } from "./images/Right.svg";
 
 export const Partners2 = () => {
   return (
@@ -18,10 +19,10 @@ export const Partners2 = () => {
       <div className={style.partners__splide}>
         <Splide
           options={{
-            width: 1024,
+            width: "1024px",
             type: "loop",
-            perPage: 6,
-            gap: "130px",
+            perPage: 5,
+            gap: "132px",
             focus: "first",
             pagination: false,
             arrows: true,
@@ -31,25 +32,46 @@ export const Partners2 = () => {
             wheelSleep: 50,
           }}
           aria-label="Partners"
+          hasTrack={false}
         >
-          <SplideSlide>
-            <Amex className={style.partners__svg} />
-          </SplideSlide>
-          <SplideSlide>
-            <Mastercard className={style.partners__svg} />
-          </SplideSlide>
-          <SplideSlide>
-            <Paywithgoogle className={style.partners__svg} />
-          </SplideSlide>
-          <SplideSlide>
-            <Sofort className={style.partners__svg} />
-          </SplideSlide>
-          <SplideSlide>
-            <Union className={style.partners__svg} />
-          </SplideSlide>
-          <SplideSlide>
-            <Visa className={style.partners__svg} />
-          </SplideSlide>
+          <SplideTrack>
+            <SplideSlide>
+              <Amex className={style.partners__svg} />
+            </SplideSlide>
+            <SplideSlide>
+              <Mastercard className={style.partners__svg} />
+            </SplideSlide>
+            <SplideSlide>
+              <Paywithgoogle className={style.partners__svg} />
+            </SplideSlide>
+            <SplideSlide>
+              <Sofort className={style.partners__svg} />
+            </SplideSlide>
+            <SplideSlide>
+              <Union className={style.partners__svg} />
+            </SplideSlide>
+            <SplideSlide>
+              <Visa className={style.partners__svg} />
+            </SplideSlide>
+          </SplideTrack>
+          <div className="splide__arrows">
+            <button
+              className={cl(
+                "splide__arrow splide__arrow--prev",
+                style.partners__arrowPrev
+              )}
+            >
+              <Right />
+            </button>
+            <button
+              className={cl(
+                "splide__arrow splide__arrow--next",
+                style.partners__arrowNext
+              )}
+            >
+              <Right />
+            </button>
+          </div>
         </Splide>
       </div>
     </div>

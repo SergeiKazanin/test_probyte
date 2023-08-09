@@ -5,7 +5,12 @@
   text-align: center;
   box-sizing: border-box;
 }
-
+.splide__arrow .splide__arrow--prev {
+  margin-right: 50px;
+}
+.splide__arrow .splide__arrow--next {
+  margin-right: 50px;
+}
 /* .splide__slide.is-active {
   background-color: black;
   display: flex;

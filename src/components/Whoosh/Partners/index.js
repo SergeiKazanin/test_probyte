@@ -2,6 +2,7 @@ import style from "./index.module.scss";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Icons from "./sprite.svg";
 import "@splidejs/react-splide/css";
+import cl from "classnames";
 
 import { ReactComponent as Alpfa } from "./images/alfa.svg";
 import { ReactComponent as Fagor } from "./images/fagor.svg";
@@ -24,11 +25,16 @@ export const Partners = () => {
       <div className={style.partners__splide}>
         <Splide
           options={{
-            width: 1000,
-            gap: "4px",
+            width: 1104,
             type: "loop",
-            perPage: 3,
+            perPage: 5,
             focus: "center",
+            pagination: false,
+            arrows: false,
+            wheel: true,
+            drag: true,
+            fixedWidth: "220px",
+            wheelSleep: 50,
           }}
           aria-label="Partners"
         >

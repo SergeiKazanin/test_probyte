@@ -43,7 +43,7 @@ export const Footer = () => {
           >
             Services
           </span>
-          <p className={style.footer__cardText2}>
+          <div className={style.footer__cardText2}>
             <p>Online stores</p>
             <p>Legal entity</p>
             <p>API Integration</p>
@@ -51,7 +51,7 @@ export const Footer = () => {
             <p>Jobs</p>
             <p> Courier job</p>
             <p> The blog</p>
-          </p>
+          </div>
         </div>
         <div className={style.footer__card}>
           <span

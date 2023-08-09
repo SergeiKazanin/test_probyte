@@ -2,7 +2,6 @@ import style from "./index.module.scss";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Icons from "./sprite.svg";
 import "@splidejs/react-splide/css";
-import cl from "classnames";
 
 import { ReactComponent as Alpfa } from "./images/alfa.svg";
 import { ReactComponent as Fagor } from "./images/fagor.svg";
@@ -39,19 +38,29 @@ export const Partners = () => {
           aria-label="Partners"
         >
           <SplideSlide>
-            <Alpfa className={style.partners__svg} />
+            <div className={style.partners__slpideElem}>
+              <Alpfa className={style.partners__svg} />
+            </div>
           </SplideSlide>
           <SplideSlide>
-            <Fagor className={style.partners__svg} />
+            <div className={style.partners__slpideElem}>
+              <Fagor className={style.partners__svg} />
+            </div>
           </SplideSlide>
           <SplideSlide>
-            <GuitaCenter className={style.partners__svg} />
+            <div className={style.partners__slpideElem}>
+              <GuitaCenter className={style.partners__svg} />
+            </div>
           </SplideSlide>
           <SplideSlide>
-            <RadioShack className={style.partners__svg} />
+            <div className={style.partners__slpideElem}>
+              <RadioShack className={style.partners__svg} />
+            </div>
           </SplideSlide>
           <SplideSlide>
-            <Tendo className={style.partners__svg} />
+            <div className={style.partners__slpideElem}>
+              <Tendo className={style.partners__svg} />
+            </div>
           </SplideSlide>
         </Splide>
       </div>

@@ -1,7 +1,5 @@
 import style from "./index.module.scss";
 
-import cl from "classnames";
-
 //import { ReactComponent as Online } from "./images/online.svg";
 
 export const OpenText = () => {

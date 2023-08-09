@@ -7,6 +7,8 @@ import { Separator } from "./components/Whoosh/Separator";
 import { Partners } from "./components/Whoosh/Partners";
 import { Intro } from "./components/Whoosh/Intro";
 import { Partners2 } from "./components/Whoosh/Partners2";
+import { Footer } from "./components/Whoosh/Footer";
+import { OpenText } from "./components/Whoosh/OpenText";
 
 export default function App() {
   return (
@@ -19,6 +21,8 @@ export default function App() {
       <Intro />
       <Partners2 />
       <Separator />
+      <OpenText />
+      <Footer />
     </div>
   );
 }

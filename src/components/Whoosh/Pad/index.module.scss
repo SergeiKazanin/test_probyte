@@ -67,7 +67,7 @@
     text-align: start;
   }
   &__text1 {
-    color: var(--colour-dark-blue);
+    color: var(--color-dark-blue);
     font-family: Intro Bold;
     font-size: 40px;
     line-height: 48px; /* 120% */
@@ -95,7 +95,7 @@
     height: 8px;
   }
   &__text3 {
-    color: var(--colour-dark-blue);
+    color: var(--color-dark-blue);
     font-family: Intro Regular;
     font-size: 22px;
     line-height: 32px;
@@ -139,7 +139,7 @@
     margin-left: 22px;
     width: 252px;
     height: 88px;
-    color: var(--colour-dark-blue);
+    color: var(--color-dark-blue);
     font-family: Intro Book;
     font-size: 14px;
     line-height: 24px;
@@ -150,7 +150,7 @@
     display: none;
   }
   &__sendParcelHeaderText {
-    color: var(--colour-dark-blue);
+    color: var(--color-dark-blue);
     font-family: Intro Regular;
     font-size: 22px;
   }
@@ -219,10 +219,10 @@
   &__active {
     height: 82px;
     border: 2px solid #2b6bf3;
-    background: var(--colour-white);
+    background: var(--color-white);
   }
   &__switchText {
-    color: var(--colour-dark-blue);
+    color: var(--color-dark-blue);
     font-family: Intro Book;
     font-size: 12px;
     opacity: 0.48;
@@ -281,7 +281,7 @@
   &__inputLocInput {
     border: 0;
     &::placeholder {
-      color: var(--colour-dark-blue);
+      color: var(--color-dark-blue);
       font-family: Intro Book;
       font-size: 16px;
       opacity: 0.56;
@@ -291,7 +291,7 @@
   &__inputLocInput2 {
     border: 0;
     &::placeholder {
-      color: var(--colour-dark-blue);
+      color: var(--color-dark-blue);
       font-family: Intro Book;
       font-size: 16px;
     }
@@ -349,7 +349,7 @@
     padding-left: 40px;
   }
   &__inputTrackText {
-    color: var(--colour-dark-blue);
+    color: var(--color-dark-blue);
     font-family: Intro Regular;
     font-size: 22px;
     line-height: 32px;
@@ -370,7 +370,7 @@
     margin-left: 16px;
     border: 0;
     &::placeholder {
-      color: var(--colour-dark-blue);
+      color: var(--color-dark-blue);
       font-family: Intro Book;
       font-size: 16px;
       opacity: 0.32;

@@ -6,14 +6,14 @@
   box-sizing: border-box;
 }
 
-.splide__slide.is-active {
+/* .splide__slide.is-active {
   background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.splide__slide {
+} */
+/* .splide__slide {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */

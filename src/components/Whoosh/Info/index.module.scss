@@ -7,7 +7,7 @@
   flex-direction: column;
   &__heading {
     margin-top: 98px;
-    color: var(--colour-dark-blue);
+    color: var(--color-dark-blue);
     text-align: center;
     font-family: Intro Bold;
     font-size: 40px;
@@ -15,7 +15,7 @@
   &__text {
     margin-top: 36px;
     width: 754px;
-    color: var(--colour-dark-blue);
+    color: var(--color-dark-blue);
     text-align: center;
     font-family: Intro Book;
     font-size: 22px;
@@ -42,7 +42,7 @@
     }
   }
   &__header {
-    color: var(--colour-dark-blue);
+    color: var(--color-dark-blue);
     font-family: Intro Regular;
     font-size: 22px;
     line-height: 32px;

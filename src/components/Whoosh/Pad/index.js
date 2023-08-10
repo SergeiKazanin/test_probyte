@@ -3,6 +3,7 @@ import cl from "classnames";
 import style from "./index.module.scss";
 
 import Icons from "./sprite.svg";
+import { ReactComponent as I } from "./images/i.svg";
 
 export const Pad = () => {
   const [activeSwitch1, setActiveSwitch1] = useState("");
@@ -53,9 +54,7 @@ export const Pad = () => {
           <div className={style.pad__sendParcel}>
             <div className={style.pad__sendParcelHeader}>
               <p className={style.pad__sendParcelHeaderText}>Send a Parcel</p>
-              <svg className={style.pad__iSvg}>
-                <use xlinkHref={Icons + "#i"}></use>
-              </svg>
+              <I className={style.pad__iSvg} />
               <span className={style.pad__tooltip}>
                 A commission is a piece of work that someone is asked to do and
                 is paid for.

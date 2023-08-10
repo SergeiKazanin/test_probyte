@@ -3,6 +3,7 @@ import style from "./index.module.scss";
 import { ReactComponent as Online } from "./images/online.svg";
 import { ReactComponent as Paperwork } from "./images/paperwork.svg";
 import { ReactComponent as Payment } from "./images/payment.svg";
+import { ReactComponent as Ir } from "./images/ir.svg";
 
 export const Intro = () => {
   return (
@@ -18,7 +19,11 @@ export const Intro = () => {
           <div className={style.intro__circle}>
             <Online />
           </div>
-          <p className={style.intro__cardHeadText}>Online</p>
+          <p className={style.intro__cardHeadText}>
+            Online{" "}
+            <span className={style.intro__cardHeadTextBlue}>calculation</span>
+          </p>
+
           <p className={style.intro__cardText}>
             Instant calculation of the cost in the order form, the price is
             updated in the process of filling out the form
@@ -42,6 +47,9 @@ export const Intro = () => {
           <p className={style.intro__cardText}>
             You can pay for delivery by card or in cash at any of the order
             addresses. For legal entities non-cash is available.
+            <span className={style.intro__ir}>
+              <Ir />
+            </span>
           </p>
         </div>
       </div>

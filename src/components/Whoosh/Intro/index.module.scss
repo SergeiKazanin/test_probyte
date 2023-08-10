@@ -63,6 +63,13 @@
     line-height: 32px;
     margin-top: 26px;
   }
+  &__cardHeadTextBlue {
+    color: var(--colour-blue, #2b6bf3);
+    font-family: Intro Regular;
+    font-size: 22px;
+    line-height: 32px; /* 145.455% */
+    text-decoration-line: underline;
+  }
   &__cardText {
     text-align: start;
     color: var(--text-color);
@@ -70,6 +77,16 @@
     font-size: 16px;
     line-height: 24px;
     margin-top: 21px;
+  }
+  &__ir {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    margin-top: 50px;
+  }
+  &__ir1 {
+    margin-top: 2px;
+    padding-left: 5px;
   }
 
   &__button {

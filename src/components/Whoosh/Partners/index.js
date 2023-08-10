@@ -9,7 +9,6 @@ import { ReactComponent as Fagor } from "./images/fagor.svg";
 import { ReactComponent as GuitaCenter } from "./images/guitaCenter.svg";
 import { ReactComponent as RadioShack } from "./images/RadioShack.svg";
 import { ReactComponent as Tendo } from "./images/tendo.svg";
-import { useEffect } from "react";
 
 export const Partners = () => {
   return (

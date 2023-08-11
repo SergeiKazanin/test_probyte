@@ -1,9 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import cl from "classnames";
 import style from "./index.module.scss";
 
 import Icons from "./sprite.svg";
 import { ReactComponent as I } from "./images/i.svg";
+import { ReactComponent as Vector } from "./images/Vector.svg";
 
 export const Pad = () => {
   const [activeSwitch1, setActiveSwitch1] = useState("");
@@ -11,6 +12,11 @@ export const Pad = () => {
   const [activeSwitch3, setActiveSwitch3] = useState("");
   const [pickupLocation, setPickupLocation] = useState("");
   const [dropLocation, setDropLocation] = useState("");
+  const [activeSwitchText1, setActiveSwitchText1] = useState("");
+  const [activeSwitchText2, setActiveSwitchText2] = useState(
+    style.pad__switchTextActive
+  );
+  const [activeSwitchText3, setActiveSwitchText3] = useState("");
 
   return (
     <div className={style.pad}>
@@ -66,43 +72,62 @@ export const Pad = () => {
                   setActiveSwitch1(style.pad__active);
                   setActiveSwitch2("");
                   setActiveSwitch3("");
+                  setActiveSwitchText1(style.pad__switchTextActive);
+                  setActiveSwitchText2("");
+                  setActiveSwitchText3("");
                 }}
                 className={cl(style.pad__switch1, activeSwitch1)}
               >
                 <svg className={style.pad__OnFootSvg}>
                   <use xlinkHref={Icons + "#OnFoot"}></use>
                 </svg>
-                <p className={style.pad__switchText}>up to 10lb</p>
+                <p className={cl(style.pad__switchText, activeSwitchText1)}>
+                  up to 10lb
+                </p>
               </div>
               <div
                 onClick={() => {
                   setActiveSwitch1("");
                   setActiveSwitch2(style.pad__active);
                   setActiveSwitch3("");
+                  setActiveSwitchText1("");
+                  setActiveSwitchText2(style.pad__switchTextActive);
+                  setActiveSwitchText3("");
                 }}
                 className={cl(style.pad__switch2, activeSwitch2)}
               >
                 <svg className={style.pad__CarSvg}>
                   <use xlinkHref={Icons + "#Car"}></use>
                 </svg>
-                <p className={style.pad__switchText}>up to 130lb</p>
+                <p className={cl(style.pad__switchText, activeSwitchText2)}>
+                  up to 130lb
+                </p>
               </div>
               <div
                 onClick={() => {
                   setActiveSwitch1("");
                   setActiveSwitch2("");
                   setActiveSwitch3(style.pad__active);
+                  setActiveSwitchText1("");
+                  setActiveSwitchText2("");
+                  setActiveSwitchText3(style.pad__switchTextActive);
                 }}
                 className={cl(style.pad__switch3, activeSwitch3)}
               >
                 <svg className={style.pad__TruckSvg}>
                   <use xlinkHref={Icons + "#Truck"}></use>
                 </svg>
-                <p className={style.pad__switchText}>over 130lb</p>
+                <p className={cl(style.pad__switchText, activeSwitchText3)}>
+                  over 130lb
+                </p>
               </div>
             </div>
             <div className={style.pad__inputLoc}>
               <div className={style.pad__inputLocInBlock}>
+                <div className={style.pad__vector}>
+                  <Vector />
+                </div>
+
                 <svg className={style.pad__PinSvg}>
                   <use xlinkHref={Icons + "#Pin"}></use>
                 </svg>

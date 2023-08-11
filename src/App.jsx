@@ -14,7 +14,7 @@ export default function App() {
   return (
     <div>
       <Head />
-      <Pad />
+      {/* <Pad />
       <Info />
       <Separator />
       <Partners />
@@ -22,7 +22,7 @@ export default function App() {
       <Partners2 />
       <Separator />
       <OpenText />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

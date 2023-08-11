@@ -14,8 +14,8 @@ export default function App() {
   return (
     <div>
       <Head />
-      {/* <Pad />
-      <Info />
+      <Pad />
+      {/* <Info />
       <Separator />
       <Partners />
       <Intro />

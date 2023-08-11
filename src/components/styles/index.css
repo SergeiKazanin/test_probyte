@@ -4,6 +4,7 @@
   padding: 0;
   text-align: center;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .splide__svg * {
   fill: #d7dff2;

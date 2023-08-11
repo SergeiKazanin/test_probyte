@@ -1,5 +1,5 @@
 import style from "./index.module.scss";
-
+import cl from "classnames";
 import Icons from "./sprite.svg";
 
 export const Info = () => {
@@ -13,7 +13,7 @@ export const Info = () => {
         for delivery services for online stores and restaurants!
       </p>
       <div className={style.info__blokPad}>
-        <div className={style.info__pad}>
+        <div className={cl(style.info__pad, style.info__pad1)}>
           <span className={style.info__header}>Become a Courier</span>
           <div className={style.info__padSvgBlock}>
             <div className={style.info__circle}>
@@ -30,7 +30,7 @@ export const Info = () => {
             Earnings from day one
           </p>
         </div>
-        <div className={style.info__pad}>
+        <div className={cl(style.info__pad, style.info__pad2)}>
           <span className={style.info__header}>Help & Support</span>
           <div className={style.info__padSvgBlock}>
             <div className={style.info__circle}>
@@ -43,7 +43,7 @@ export const Info = () => {
             Door-to-door delivery <br /> in 90 minutes or at your convenience
           </p>
         </div>
-        <div className={style.info__pad}>
+        <div className={cl(style.info__pad, style.info__pad3)}>
           <span className={style.info__header}>Affiliate Program</span>
           <div className={style.info__padSvgBlock}>
             <div className={style.info__circle}>

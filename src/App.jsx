@@ -15,11 +15,11 @@ export default function App() {
     <div>
       <Head />
       <Pad />
-      {/* <Info />
+      <Info />
       <Separator />
       <Partners />
       <Intro />
-      <Partners2 />
+      {/* <Partners2 />
       <Separator />
       <OpenText />
       <Footer /> */}

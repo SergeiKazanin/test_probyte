@@ -91,6 +91,12 @@ export const Partners = () => {
           </SplideSlide>
         </Splide>
       </div>
+      <div className={style.partners__lelColabAdapt}>
+        <svg className={style.partners__briefcaseSvg}>
+          <use xlinkHref={Icons + "#briefcase"}></use>
+        </svg>
+        <span className={style.partners__colabText}>Let's collaborate</span>
+      </div>
     </div>
   );
 };

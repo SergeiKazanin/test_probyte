@@ -1,25 +1,26 @@
 import style from "./index.module.scss";
 
 import { ReactComponent as Etc } from "./images/Etc.svg";
-import { useRef, useState } from "react";
+import { useState } from "react";
+import cl from "classnames";
 
 export const OpenText = () => {
-  const textPar = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
+  const [styleOpen, setStyleOpen] = useState("");
 
   const handleClickEtc = () => {
     if (!isOpen) {
-      textPar.current.style.maxHeight = "200px";
+      setStyleOpen(style.opentext__textFull);
       setIsOpen(true);
     } else {
-      textPar.current.style.maxHeight = "100px";
+      setStyleOpen("");
       setIsOpen(false);
     }
   };
 
   return (
     <div className={style.opentext}>
-      <div ref={textPar} className={style.opentext__text}>
+      <div className={cl(style.opentext__text, styleOpen)}>
         <p className={style.opentext__textParagraph}>
           Since 2019, LibertyWalk has successfully provided express courier
           delivery services in the city for both individuals and legal entities,

@@ -22,7 +22,7 @@ export default function App() {
       <Partners2 />
       <Separator />
       <OpenText />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

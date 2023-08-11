@@ -19,10 +19,10 @@ export default function App() {
       <Separator />
       <Partners />
       <Intro />
-      {/* <Partners2 />
+      <Partners2 />
       <Separator />
       <OpenText />
-      <Footer /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -27,6 +27,8 @@
     margin-top: 55px;
     @include mobile-small {
       margin-top: 34px;
+      display: flex;
+      justify-content: end;
     }
   }
   &__arrowPrev {

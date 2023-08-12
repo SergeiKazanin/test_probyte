@@ -11,8 +11,19 @@ import { ReactComponent as Sofort } from "./images/pmx-logo-sofort.svg";
 import { ReactComponent as Union } from "./images/pmx-logo-union-pay 1.svg";
 import { ReactComponent as Visa } from "./images/pmx-logo-visa.svg";
 import { ReactComponent as Right } from "./images/Right.svg";
+import { useEffect } from "react";
+import { useState } from "react";
 
 export const Partners2 = () => {
+  const [gap, setGap] = useState("103px");
+  window.addEventListener("resize", () => {
+    if (window.innerWidth < 361) {
+      setGap("80px");
+    } else {
+      setGap("103px");
+    }
+  });
+
   return (
     <div className={style.partners}>
       <span className={style.partners__headerText}>Payment methods</span>
@@ -22,13 +33,13 @@ export const Partners2 = () => {
             width: "1024px",
             type: "loop",
             perPage: 5,
-            gap: "132px",
+            gap: gap,
             focus: "first",
             pagination: false,
             arrows: true,
             wheel: true,
             drag: true,
-            fixedWidth: "56px",
+            fixedWidth: "85px",
             wheelSleep: 50,
           }}
           aria-label="Partners"
@@ -36,22 +47,22 @@ export const Partners2 = () => {
         >
           <SplideTrack>
             <SplideSlide>
-              <Amex className={style.partners__svg} />
+              <Amex />
             </SplideSlide>
             <SplideSlide>
-              <Mastercard className={style.partners__svg} />
+              <Mastercard />
             </SplideSlide>
             <SplideSlide>
-              <Paywithgoogle className={style.partners__svg} />
+              <Paywithgoogle />
             </SplideSlide>
             <SplideSlide>
-              <Sofort className={style.partners__svg} />
+              <Sofort />
             </SplideSlide>
             <SplideSlide>
-              <Union className={style.partners__svg} />
+              <Union />
             </SplideSlide>
             <SplideSlide>
-              <Visa className={style.partners__svg} />
+              <Visa />
             </SplideSlide>
           </SplideTrack>
           <div className="splide__arrows">

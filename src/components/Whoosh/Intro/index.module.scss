@@ -11,6 +11,7 @@
     height: 1096px;
     padding: 0 16px 0 16px;
     width: auto;
+    background: var(--background-main);
   }
 
   &__intersect {
@@ -96,6 +97,7 @@
     margin-top: 26px;
     @include mobile-small {
       margin-top: 24px;
+      font-size: 20px;
     }
   }
   &__cardHeadTextBlue {
@@ -104,6 +106,9 @@
     font-size: 22px;
     line-height: 32px; /* 145.455% */
     text-decoration-line: underline;
+    @include mobile-small {
+      font-size: 20px;
+    }
   }
   &__cardText {
     text-align: start;
@@ -114,6 +119,7 @@
     margin-top: 21px;
     @include mobile-small {
       margin-top: 14px;
+      text-align: center;
     }
   }
   &__ir {

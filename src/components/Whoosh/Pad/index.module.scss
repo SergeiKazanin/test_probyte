@@ -145,7 +145,13 @@
       border-radius: 8px;
     }
   }
-
+  &__pagging {
+    display: none;
+    margin-top: 17px;
+    @include mobile-small {
+      display: block;
+    }
+  }
   &__blokRight {
     padding-top: 36px;
     z-index: 20;

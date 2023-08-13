@@ -5,6 +5,7 @@ import style from "./index.module.scss";
 import Icons from "./sprite.svg";
 import { ReactComponent as I } from "./images/i.svg";
 import { ReactComponent as Vector } from "./images/Vector.svg";
+import { ReactComponent as Pagging } from "./images/Pagging.svg";
 
 export const Pad = () => {
   const [activeSwitch1, setActiveSwitch1] = useState("");
@@ -55,6 +56,7 @@ export const Pad = () => {
           </p>
           <p className={style.pad__text3}>How it works</p>
           <div className={style.pad__img}></div>
+          <Pagging className={style.pad__pagging} />
         </div>
         <div className={style.pad__blokRight}>
           <div className={style.pad__sendParcel}>
